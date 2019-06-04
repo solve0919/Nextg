@@ -1,7 +1,7 @@
 //
 //  AppDelegate.swift
 //  Nextg
-//
+//a
 //  Created by 塩田　祐也 on 2019/06/05.
 //  Copyright © 2019 塩田　祐也. All rights reserved.
 //
