@@ -11,13 +11,24 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var formlabel: UILabel!
     @IBOutlet weak var answerlabel: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
- 
-}
+        formlabel.text = ""
+        answerlabel.text = ""
+//        ロード時の処理
+    }
     
     @IBAction func inputformla(_ sender: UIButton) {
+        
+        guard let formlatext = formlabel.text else {
+            return
+        }
+        
+        guard let senderedText = sender.titleLabel?.text else {
+            return
+        }
+        formlabel.text = formlatext + senderedText
+        
     }
     @IBAction func clearcalculation(_ sender: UIButton) {
     }
