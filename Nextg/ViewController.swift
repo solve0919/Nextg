@@ -19,14 +19,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func inputformla(_ sender: UIButton) {
-        
+// 飛んできた文字を表示させる
         guard let formlatext = formlabel.text else {
             return
         }
-        
+//   入力欄にタイトルの文字を文字列で飛ばす
         guard let senderedText = sender.titleLabel?.text else {
             return
         }
+//        もともとの数字に送った数字を足す
         formlabel.text = formlatext + senderedText
     }
     @IBAction func clearcalculation(_ sender: UIButton) {
@@ -35,6 +36,14 @@ class ViewController: UIViewController {
         answerlabel.text = ""
     }
     @IBAction func calculateanswer(_ sender: UIButton) {
+//        回答の処理
+        guard let formlatext = formlabel.text else {
+            return
+        }
+//        let formula: String = formatFormula(formulatext)
+//        answerlabel.text = evalFormula(formula)
     }
+    
+    
 }
 
