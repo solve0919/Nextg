@@ -9,10 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var formlabel: UILabel!
+    @IBOutlet weak var answerlabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-         print("アプリが起動したよ！")
+ 
 }
     
 }
