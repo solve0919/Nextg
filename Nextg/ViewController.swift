@@ -17,5 +17,7 @@ class ViewController: UIViewController {
  
 }
     
+    @IBAction func inputformla(_ sender: UIButton) {
+    }
 }
 
