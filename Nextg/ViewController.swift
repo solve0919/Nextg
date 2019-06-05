@@ -28,9 +28,11 @@ class ViewController: UIViewController {
             return
         }
         formlabel.text = formlatext + senderedText
-        
     }
     @IBAction func clearcalculation(_ sender: UIButton) {
+//        クリア時の処理
+        formlabel.text = ""
+        answerlabel.text = ""
     }
     @IBAction func calculateanswer(_ sender: UIButton) {
     }
