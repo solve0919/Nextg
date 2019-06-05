@@ -19,5 +19,9 @@ class ViewController: UIViewController {
     
     @IBAction func inputformla(_ sender: UIButton) {
     }
+    @IBAction func clearcalculation(_ sender: UIButton) {
+    }
+    @IBAction func calculateanswer(_ sender: UIButton) {
+    }
 }
 
