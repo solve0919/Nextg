@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Expression
 
 class ViewController: UIViewController {
     @IBOutlet weak var formlabel: UILabel!
@@ -44,7 +45,7 @@ class ViewController: UIViewController {
         let formula: String = formatFormula(formlatext)
         answerlabel.text = evalFormula(formula)
     }
-}
+
 
 private func formatFormula(_ formula: String) -> String {
     // 入力された整数には`.0`を追加して小数として評価する
@@ -78,5 +79,6 @@ private func formatAnswer(_ answer: String) -> String {
         options: NSString.CompareOptions.regularExpression,
         range: nil)
     return formattedAnswer
+    }
 }
 
