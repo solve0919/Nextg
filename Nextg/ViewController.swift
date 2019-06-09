@@ -21,8 +21,8 @@ class ViewController: UIViewController {
     
     @IBAction func inputformla(_ sender: UIButton) {
 
-        // 前回分を表示させる
-        guard let formlatext = formlabel.text else {
+        // 表示させる
+        guard let formlatext = NSDecimalNumber(double: formlabel.text) else {
             return
         }
 //   入力欄にタイトルの文字を文字列で飛ばす
@@ -67,7 +67,7 @@ private func evalFormula(_ formula: String) -> String {
         return formatAnswer(String(answer))
     } catch {
         // 計算式が不当だった場合
-        return "式を正しく入力してください"
+        return "計算できません"
     }
 }
 
